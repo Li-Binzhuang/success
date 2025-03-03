@@ -1,16 +1,15 @@
 package org.laoli.success.trigger;
 
 import org.laoli.success.trigger.VO.Result;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class success {
+public class SuccessController {
     @PostMapping("/success")
     public Result<String> success(){
-        return Result.success("success");
+        return Result.success("SuccessController");
     }
     @PostMapping("/fail")
     public Result<String> fail(){
